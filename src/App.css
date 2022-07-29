@@ -173,15 +173,13 @@ aside {
 
 /*------------------------------CONTACT PAGE----------------------------*/
 article.contact {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 10rem;
 }
 .contactLinkedin,
 .contactGithub,
 .contactEmail {
-  width: 10rem;
+  width: 8rem;
+  height: 8rem;
   box-shadow: 0 0 30px #2563eb;
 }
 .contactLinkedin span {
@@ -253,6 +251,9 @@ article.contact {
   .homeContainer{
     margin-top: 6rem!important;
   }
+  article.contact {
+    margin-top: 3rem;
+  }
 }
 @media (min-width: 768px) {
   .links a {
@@ -279,6 +280,9 @@ article.contact {
     height: 180px;
   }
   .homeContainer{
-    margin-top: 1rem!important;
+    margin-top: 2rem!important;
+  }
+  article.contact {
+    margin-top: 1rem;
   }
 }
