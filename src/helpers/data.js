@@ -362,7 +362,7 @@ const data = [
     },
     {
         id:1,
-        name:"JS Algorithms",
+        name:"JS-Algorithms",
         image:"js",
         url:"https://github.com/MehmetCakir1/javascriptAlgorithms",
         source:"https://github.com/MehmetCakir1/javascriptAlgorithms",
