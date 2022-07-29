@@ -19,7 +19,7 @@ const Skills = () => {
         <div className="skill d-flex flex-column col-sm-6 col-md-4 col-lg-3 align-items-center justify-content-between py-1">
           <div className="image d-flex align-items-center justify-content-center">
             {" "}
-            <img src="images/javascript.png" alt="js" />
+            <img src="images/js.png" alt="js" />
           </div>
           <div className="title text-light fs-5">JS</div>
         </div>
