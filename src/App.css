@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #0a192f;
+}
+/*--------------------NAVBAR-----------------------------*/
+.logo-img {
+  height: 60px;
+}
+.links a{
+  color: #8892b0 !important;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:visited {
+  color: white !important;
+}
+.links a:hover {
+  color: #8892b0 !important;
+}
+.hamburger{
+  color:#ccd6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*-------------------HOME PAGE---------------------------*/
+.homeContainer {
+  font-family: "Raleway", sans-serif;
+  margin-top: 8rem!important;
+
+}
+.fullName {
+  font-size: 4.5rem;
+  color: #ccd6f6 !important;
+  line-height: 4rem;
+}
+.frondEnd {
+  font-size: 4.5rem;
+  color: #8892b0 !important;
+  line-height: 4rem;
+}
+.desc {
+  font-size: 1rem;
+  color: #8892b0 !important;
+  font-weight: 0 !important;
+}
+/*------------------------SIDEBAR------------------------*/
+aside {
+  width: 11rem;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+.icons {
+  transform: translate(-6.9rem);
+  transition: all 0.5s ease-in-out;
+  padding: 0 0 0 0.5rem;
+  cursor: pointer;
+}
+.icons a {
+  color: white !important;
+  text-decoration: none;
+}
+.linkedin {
+  background-color: #2563eb;
+}
+.linkedin:hover {
+  transform: translate(0);
+}
+.github {
+  background-color: #333333;
+}
+.github:hover {
+  transform: translate(0);
+}
+.email {
+  background-color: #6fc2b0;
+}
+.email:hover {
+  transform: translate(0);
+}
+.resume {
+  background-color: #565f69;
+}
+.resume:hover {
+  transform: translate(0);
+}
+
+/*-------------------------SKILL PAGE------------------------------*/
+
+.skill {
+  box-shadow: 2px 5px 5px #041020, 2px 0px 5px #041020, 0px 0px 5px #041020;
+  max-width: 160px;
+  height: 130px;
+  transition: all 0.3s ease-in-out;
+}
+.skill:hover {
+  transform: scale(1.1);
+}
+.skill img {
+  width: 60%;
+  object-fit: contain;
+}
+.git img {
+  width: 120%;
+}
+/*-------------------ABOUT----------------------------*/
+.about {
+  text-align: justify;
+  color:#ccd6f6;
+}
+.about span{
+  color: #2243a5;
+}
+/*-----------------------PROJECT PAGE----------------------------*/
+.project-imgDiv img {
+  width: 100%;
+  height: 250px;
+  /* object-fit: cover; */
+}
+.project-imgDiv {
+  position: relative;
+  max-width: 300px;
+}
+.projectName {
+  text-shadow: 2px 0 #0a192f, -2px 0 #0a192f, 0 2px #0a192f, 0 -2px #0a192f,
+    1px 1px #0a192f, -1px -1px #0a192f, 1px -1px #0a192f, -1px 1px #0a192f;
+}
+.btnDiv {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(15, 34, 63, 0.7);
+}
+.btnDiv button {
+  width: 6.5rem;
+  font-size: 0.8rem !important;
+}
+.visit{
+  background-color:#8892b0 ;
+}
+.source{
+  background-color:#ccd6f6;
+}
+.visit:hover,.source:hover{
+  background-color: #2a4c80;
+  color:#ccd6f6;
+}
+
+/*--------buttons above---------------*/
+.buttons button {
+  width: 7rem;
+  background-color:#8892b0 ;
+  transition: all 0.3s ease-out;
+}
+.buttons button:hover:not(.all){
+  background-color: #2a4c80;
+  color:#ccd6f6;
+}
+.buttons button:active {
+  transform: scale(0.97);
+}
+.all{
+  background-color: #2a4c80 !important;
+  color:#ccd6f6;
+}
+.all:hover{
+  background-color: #8892b0 !important; ;
+}
+
+/*------------------------------CONTACT PAGE----------------------------*/
+article.contact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.contactLinkedin,
+.contactGithub,
+.contactEmail {
+  width: 10rem;
+  box-shadow: 0 0 30px #2563eb;
+}
+.contactLinkedin span {
+  color: #2563eb !important;
+  background-color: aliceblue;
+  box-shadow: 0 0 30px #2563eb;
+  cursor: pointer;
+}
+.contactLinkedin span:hover {
+  transform: scale(1.1);
+}
+.contactGithub span {
+  color: #333333 !important;
+  background-color: aliceblue;
+  box-shadow: 0 0 30px aliceblue;
+  cursor: pointer;
+}
+.contactGithub span:hover {
+  transform: scale(1.1);
+}
+.contactEmail span {
+  width: 72px;
+  height: 72px;
+  color: #6fc2b0;
+  cursor: pointer;
+  
+}
+
+
+.contactEmail span:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1050px) {
+  .card-container {
+    margin-left: 0.8rem !important;
+  }
+  .icons {
+    transform: translate(-7.5rem);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 991px) {
+  .icons {
+    transform: translate(-7.6rem);
   }
-  to {
-    transform: rotate(360deg);
+  .card-container {
+    margin-left: 0rem !important;
+  }
+  .homeContainer{
+    margin-top: 7rem!important;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 100%;
+  }
+
+  .icons {
+    transform: translate(-8rem);
+  }
+  .fullName,
+  .frondEnd {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .desc {
+    font-size: 0.9rem;
+  }
+  .homeContainer{
+    margin-top: 6rem!important;
+  }
+}
+@media (min-width: 768px) {
+  .links a {
+    border: none !important;
+  }
+}
+@media (max-width: 567px) {
+  .icons {
+    transform: translate(-8rem);
+  }
+}
+@media (max-width: 400px) {
+  .project-imgDiv {
+    width: 240px;
+  }
+  .project-imgDiv img {
+    height: 180px;
+  }
+  .icons {
+    margin-right: 0.1rem !important;
+  }
+  .btnDiv {
+    width: 100%;
+    height: 180px;
+  }
+  .homeContainer{
+    margin-top: 1rem!important;
   }
 }
