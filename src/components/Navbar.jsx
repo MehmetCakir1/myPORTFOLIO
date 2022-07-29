@@ -32,12 +32,6 @@ const Navbar = () => {
             </Link>
             <Link
               className="border-1 border-bottom border-danger text-center"
-              to="/about"
-            >
-              About
-            </Link>
-            <Link
-              className="border-1 border-bottom border-danger text-center"
               to="/skills"
             >
               Skills
@@ -59,9 +53,6 @@ const Navbar = () => {
           <div className="links d-md-flex gap-4 fs-4 d-none ">
             <Link className="text-light" to="/">
               Home
-            </Link>
-            <Link className="text-light" to="/about">
-              About
             </Link>
             <Link className="text-light" to="/skills">
               Skills
