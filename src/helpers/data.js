@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:49,
+        name:"Shopping Cart",
+        image:"cart",
+        url:"https://cart-project-with-use-reducer.vercel.app/",
+        source:"https://github.com/MehmetCakir1/cartProjectWithUseReducer",
+        tool:"react"
+    },
+    {
         id:48,
         name:"Blog App",
         image:"blogapp",
