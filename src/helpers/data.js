@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:50,
+        name:"Pagination",
+        image:"pagination",
+        url:"https://pagination-project-with-react.vercel.app/",
+        source:"https://github.com/MehmetCakir1/paginationProjectWithReact",
+        tool:"react"
+    },
+    {
         id:49,
         name:"Shopping Cart",
         image:"cart",
