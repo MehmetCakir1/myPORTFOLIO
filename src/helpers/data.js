@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:51,
+        name:"Pagination",
+        image:"dark-mode",
+        url:"https://dark-mode-project.vercel.app/",
+        source:"https://github.com/MehmetCakir1/darkModeProject/blob/master/README.md",
+        tool:"react"
+    },
+    {
         id:50,
         name:"Pagination",
         image:"pagination",
