@@ -51,6 +51,13 @@ const Skills = () => {
           </div>
           <div className="title text-light fs-5">SASS</div>
         </div>
+        <div className="skill tailwind d-flex flex-column col-sm-6 col-md-4 col-lg-3 align-items-center justify-content-between py-1">
+          <div className="image d-flex align-items-center justify-content-center">
+            {" "}
+            <img src="images/tailwind.png" alt="tailwind" />
+          </div>
+          <div className="title text-light fs-5 ">TAILWIND</div>
+        </div>
         <div className="skill git d-flex flex-column col-sm-6 col-md-4 col-lg-3 align-items-center justify-content-between py-1">
           <div className="image d-flex align-items-center justify-content-center">
             {" "}
@@ -72,6 +79,7 @@ const Skills = () => {
           </div>
           <div className="title text-light fs-5">JIRA</div>
         </div>
+
       </article>
     </div>
   );

@@ -110,7 +110,9 @@ aside {
 .git img {
   width: 120%;
 }
-
+.tailwind img{
+  width: 120%;
+}
 /*-----------------------PROJECT PAGE----------------------------*/
 .project-imgDiv img {
   width: 100%;
@@ -150,25 +152,28 @@ aside {
 }
 
 /*--------buttons above---------------*/
-.buttons button {
+.single-category {
   width: 7rem;
-  background-color:#8892b0 ;
+  background-color:#8892b0 !important ;
   transition: all 0.3s ease-out;
+  border: none;
+  padding:0.3rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
 }
-.buttons button:hover:not(.all){
-  background-color: #2a4c80;
+.active-category{
+  background-color: #2a4c80 !important;
   color:#ccd6f6;
+  width: 7rem;
+  transition: all 0.3s ease-out;
+  border: none;
+  padding:0.3rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+
 }
 .buttons button:active {
   transform: scale(0.97);
-}
-.all{
-  background-color: #2a4c80 !important;
-  color:#ccd6f6;
-}
-.all:hover{
-  background-color: #8892b0 !important;
-  color: black;
 }
 
 /*------------------------------CONTACT PAGE----------------------------*/
