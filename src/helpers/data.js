@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:53,
+        name:"E-Commerce",
+        image:"e-commerce",
+        url:"https://e-commerce-project-liart.vercel.app/",
+        source:"https://github.com/MehmetCakir1/e-commerceProject",
+        tool:"react"
+    },
+    {
         id:52,
         name:"To Do App",
         image:"to_do_app_with_django",
