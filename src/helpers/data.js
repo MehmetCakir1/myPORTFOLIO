@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:52,
+        name:"To Do App",
+        image:"to_do_app_with_django",
+        url:"https://to-do-app-with-django.herokuapp.com/",
+        source:"https://github.com/MehmetCakir1/to_do_app_with_django",
+        tool:"django"
+    },
+    {
         id:51,
         name:"Pagination",
         image:"dark-mode",

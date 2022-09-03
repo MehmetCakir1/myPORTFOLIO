@@ -21,6 +21,7 @@ const changeColor=(a)=>{
         <button onClick={(e)=>{handleProjects(e);changeColor(e);}} value="react" className="single-category">REACT</button>
         <button onClick={(e)=>{handleProjects(e);changeColor(e);}} value="javascript" className="single-category">JAVASCRIPT</button>
         <button onClick={(e)=>{handleProjects(e);changeColor(e);}} value="css" className="single-category">CSS</button>
+        <button onClick={(e)=>{handleProjects(e);changeColor(e);}} value="django" className="single-category">DJANGO</button>
       </div>
       <div className="row container d-flex justify-content-center m-auto card-container">
         {projects.map((item) => {
