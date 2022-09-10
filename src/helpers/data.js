@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:5,
+        name:"E-Commerce-Redux",
+        image:"e-commerceWithRedux",
+        url:"https://e-commerce-with-redux.vercel.app/",
+        source:"https://github.com/MehmetCakir1/e-commerceWithRedux",
+        tool:"react"
+    },
+    {
         id:54,
         name:"To Do App-Redux",
         image:"toDoAppWithRedux",
