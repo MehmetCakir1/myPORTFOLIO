@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:56,
+        name:"Post App-Redux-Toolkit",
+        image:"postAppWithReduxToolkit",
+        url:"https://post-app-with-redux-toolkit.vercel.app/",
+        source:"https://github.com/MehmetCakir1/postAppWithReduxToolkit",
+        tool:"react"
+    },
+    {
         id:55,
         name:"E-Commerce-Redux",
         image:"e-commerceWithRedux",
