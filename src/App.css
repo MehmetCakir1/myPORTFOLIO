@@ -31,7 +31,6 @@ a:visited {
 .homeContainer {
   font-family: "Raleway", sans-serif;
   margin-top: 8rem!important;
-
 }
 .fullName {
   font-size: 4.5rem;
@@ -48,6 +47,82 @@ a:visited {
   color: #8892b0 !important;
   font-weight: 0 !important;
 }
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../public/images/bubble.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: -100vh;
+  animation: bubble-animation 8s ease-in infinite;
+}
+
+@keyframes bubble-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-900px);
+    opacity: 0;
+  }
+}
+.bubble:nth-child(1) {
+  width: 25px;
+  height: 25px;
+}
+.bubble:nth-child(2) {
+  animation-delay: 2s;
+  width: 35px;
+  height: 35px;
+}
+.bubble:nth-child(3) {
+  animation-delay: 1s;
+  width: 15px;
+  height: 15px;
+}
+.bubble:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubble:nth-child(5) {
+  animation-delay: 4s;
+  width: 20px;
+  height: 20px;
+}
+.bubble:nth-child(6) {
+  animation-delay: 5.5s;
+  width: 27px;
+  height: 27px;
+}
+.bubble:nth-child(7) {
+  animation-delay: 3.5s;
+  width: 67px;
+  height: 67px;
+}
+.bubble:nth-child(8) {
+  animation-delay: 4.5s;
+  width: 37px;
+  height: 37px;
+}
+.bubble:nth-child(9) {
+  animation-delay: 5s;
+  width: 47px;
+  height: 47px;
+}
+
 /*------------------------SIDEBAR------------------------*/
 aside {
   width: 11rem;
