@@ -22,6 +22,7 @@ const Home = () => {
         <div className="bubble"></div>
       </div>
         </div>
+        <img src="images/wave.svg" alt="wave"className="wave" />
       </div>
 
   );

@@ -28,6 +28,9 @@ a:visited {
 }
 
 /*-------------------HOME PAGE---------------------------*/
+/* .home{
+  height: 100vh;
+} */
 .homeContainer {
   font-family: "Raleway", sans-serif;
   margin-top: 8rem!important;
@@ -47,6 +50,11 @@ a:visited {
   color: #8892b0 !important;
   font-weight: 0 !important;
 }
+.wave{
+  position:absolute;
+  bottom:0;
+  left: 0;
+}
 
 .bubble {
   width: 50px;
@@ -57,8 +65,9 @@ a:visited {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  bottom: -100vh;
-  animation: bubble-animation 8s ease-in infinite;
+  bottom: -30vh;
+  animation: bubble-animation 5s ease-in infinite;
+  opacity: 0;
 }
 
 @keyframes bubble-animation {
@@ -67,16 +76,16 @@ a:visited {
     opacity: 0;
   }
   25% {
-    opacity: 1;
+    opacity: 0.7;
   }
   50% {
-    opacity: 1;
+    opacity: 0.6;
   }
   75% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   100% {
-    transform: translateY(-900px);
+    transform: translateY(-80vh);
     opacity: 0;
   }
 }
@@ -91,8 +100,8 @@ a:visited {
 }
 .bubble:nth-child(3) {
   animation-delay: 1s;
-  width: 15px;
-  height: 15px;
+  width: 45px;
+  height: 45px;
 }
 .bubble:nth-child(4) {
   animation-delay: 4.5s;
@@ -168,15 +177,30 @@ aside {
 }
 
 /*-------------------------SKILL PAGE------------------------------*/
-
+.skillDiv{
+  animation: skillDiv 1s ease-in-out;
+}
+@keyframes skillDiv {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 .skill {
-  box-shadow: 2px 5px 5px #041020, 2px 0px 5px #041020, 0px 0px 5px #041020;
+  /* box-shadow: 2px 5px 5px #041020, 2px 0px 5px #041020, 0px 0px 5px #041020; */
   max-width: 160px;
   height: 130px;
   transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px) saturate(186%);
+    -webkit-backdrop-filter: blur(4px) saturate(186%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 .skill:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .skill img {
   width: 60%;
@@ -187,6 +211,10 @@ aside {
 }
 .tailwind img{
   width: 120%;
+}
+.skill .title{
+  color: #0a192f !important;
+  font-weight: 700;
 }
 /*-----------------------PROJECT PAGE----------------------------*/
 .project-imgDiv img {
@@ -288,9 +316,52 @@ article.contact {
   
 }
 
-
 .contactEmail span:hover {
   transform: scale(1.1);
+}
+
+.contactLinkedin{
+  animation: contactLinkedin .7s ease-in;
+}
+@keyframes contactLinkedin {
+  0%{
+    transform: translateY(-250px);
+  }
+  75%{
+    transform: translateY(25px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.contactEmail{
+  animation: contactEmail .7s ease-in;
+}
+@keyframes contactEmail {
+  0%{
+    transform: translateY(-250px);
+  }
+  75%{
+    transform: translateY(25px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.contactGithub{
+  animation: contactGithub .7s ease-in;
+}
+@keyframes contactGithub {
+  0%{
+    transform: translateY(250px);
+  }
+  75%{
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1050px) {
