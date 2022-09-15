@@ -65,7 +65,7 @@ const Navbar = () => {
           //   </Link>
           // </div>
           <div className="Menu">
-            <ul className="Menu-list list-unstyled d-flex" data-offset="10">
+            <ul className="Menu-list list-unstyled d-flex p-0 m-0" data-offset="10">
               <Link to="/" className="text-decoration-none">
                 <li className="Menu-list-item" data-offset="20" onclick>
                   Home

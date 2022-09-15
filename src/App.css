@@ -9,6 +9,9 @@ body {
   background-color: #0a192f;
 }
 /*--------------------NAVBAR-----------------------------*/
+/* nav{
+  box-shadow: 0px 5px 5px #11294d;
+} */
 .logo-img {
   height: 60px;
 }
@@ -44,7 +47,7 @@ a:visited {
   content: "";
   display: block;
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: -10%;
   right: -10%;
   height: 2px;
@@ -337,11 +340,12 @@ aside {
   width: 9rem;
   transition: all 0.3s ease-out;
    border: none;
-  padding:0.3rem 0.5rem;
+  padding:0.5rem 0.5rem;
   border-radius: 10px;
   font-weight: 700; 
+  --border-size: 2px;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;}
 
-}
 .single-category{
   --offset: 10px;
   --border-size: 2px;
@@ -364,10 +368,48 @@ aside {
   width: 9rem;
   transition: all 0.3s ease-out;
    border: none;
-  padding:0.3rem 0.5rem;
+  padding:0.5rem 0.5rem;
   border-radius: 10px;
   font-weight: 700;
   margin: 0rem 0.5rem;
+}
+.single-category span {
+  transition: all 0.3s;
+}
+.single-category::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: scale(0.1, 1);
+  border-radius: 23%;
+}
+.single-category:hover span {
+  letter-spacing: 2px;
+}
+.single-category:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.single-category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  border-radius: 23%;
+}
+.single-category:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
 
 /*------------------------------CONTACT PAGE----------------------------*/

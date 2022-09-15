@@ -22,7 +22,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
           value="all"
           className="single-category active-category"
         >
-          ALL
+          <span>ALL</span>
         </button>
         <button
           onClick={(e) => {
@@ -32,7 +32,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
           value="react"
           className="single-category"
         >
-          REACT
+          <span>REACT</span>
         </button>
         <button
           onClick={(e) => {
@@ -42,7 +42,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
           value="javascript"
           className="single-category"
         >
-          JAVASCRIPT
+          <span>JAVASCRIPT</span>
         </button>
         <button
           onClick={(e) => {
@@ -52,7 +52,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
           value="css"
           className="single-category"
         >
-          CSS
+          <span> CSS</span>
         </button>
         <button
           onClick={(e) => {
@@ -62,7 +62,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
           value="django"
           className="single-category"
         >
-          DJANGO
+          <span >DJANGO</span>
         </button>
       </div>
       <div className="row container d-flex justify-content-center m-auto card-container">
