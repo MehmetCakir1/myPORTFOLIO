@@ -176,10 +176,10 @@ aside {
 }
 
 /*-------------------------SKILL PAGE------------------------------*/
-.skillDiv{
-  animation: skillDiv 1s ease-in-out;
+.skill{
+  animation: skill-animation 1s ease-in-out;
 }
-@keyframes skillDiv {
+@keyframes skill-animation {
   0%{
     transform: scale(0);
   }
@@ -187,6 +187,7 @@ aside {
     transform: scale(1);
   }
 }
+
 .skill {
   /* box-shadow: 2px 5px 5px #041020, 2px 0px 5px #041020, 0px 0px 5px #041020; */
   max-width: 160px;
@@ -456,4 +457,3 @@ article.contact {
   }
 }
 /*---------------------------------------*/
-
