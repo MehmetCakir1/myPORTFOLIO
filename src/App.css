@@ -331,28 +331,43 @@ aside {
   }
 } */
 /*--------buttons above---------------*/
-.single-category {
-  width: 7rem;
-  background-color:#8892b0 !important ;
-  transition: all 0.3s ease-out;
-  border: none;
-  padding:0.3rem 0.5rem;
-  border-radius: 10px;
-  font-weight: 700;
-}
+
 .active-category{
-  background-color: #2a4c80 !important;
-  color:#ccd6f6;
-  width: 7rem;
+  color: #898989 !important;
+  width: 9rem;
   transition: all 0.3s ease-out;
-  border: none;
+   border: none;
   padding:0.3rem 0.5rem;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 700; 
 
 }
-.buttons button:active {
-  transform: scale(0.97);
+.single-category{
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  /* padding: 1.5e 3em; */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #e55743;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  width: 9rem;
+  transition: all 0.3s ease-out;
+   border: none;
+  padding:0.3rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  margin: 0rem 0.5rem;
 }
 
 /*------------------------------CONTACT PAGE----------------------------*/
@@ -533,3 +548,5 @@ article.contact {
   }
 }
 /*---------------------------------------*/
+
+
