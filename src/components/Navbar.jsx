@@ -65,9 +65,9 @@ const Navbar = () => {
           //   </Link>
           // </div>
           <div className="Menu">
-            <ul className="Menu-list list-unstyled d-flex p-0 m-0" data-offset="10">
+            <ul className="Menu-list list-unstyled d-none d-md-flex p-0 m-0" data-offset="10">
               <Link to="/" className="text-decoration-none">
-                <li className="Menu-list-item" data-offset="20" onclick>
+                <li className="Menu-list-item" data-offset="20" >
                   Home
                   <span className="Mask">
                     <span>Home</span>
@@ -81,7 +81,6 @@ const Navbar = () => {
                 <li
                   className="Menu-list-item me-4 pe-2"
                   data-offset="16"
-                  onclick
                 >
                   Skils
                   <span className="Mask">
@@ -93,7 +92,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link className="text-decoration-none" to="/projects">
-                <li className="Menu-list-item" data-offset="12" onclick>
+                <li className="Menu-list-item" data-offset="12">
                   Projects
                   <span className="Mask">
                     <span>Projects</span>
@@ -104,7 +103,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link className="text-decoration-none" to="/contact">
-                <li className="Menu-list-item" data-offset="8" onclick>
+                <li className="Menu-list-item" data-offset="8">
                   Contact
                   <span className="Mask">
                     <span>Contact</span>
