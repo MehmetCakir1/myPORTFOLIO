@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:57,
+        name:"Weather App With Django",
+        image:"weather",
+        url:"https://weather-app-with-django.herokuapp.com/",
+        source:"https://github.com/MehmetCakir1/Weather_App_With_Django",
+        tool:"django"
+    },
+    {
         id:56,
         name:"Post App-Redux-Toolkit",
         image:"postAppWithReduxToolkit",
