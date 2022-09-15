@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="d-flex justify-content-between align-items-center p-3 flex-column flex-md-row">
         <div className="logo text-light d-flex justify-content-between align-items-center">
           <Link to="/">
-            <div className="lodoDiv">
+            <div className="logoDiv">
               <img className="logo-img" src="images/logo.png" alt="logo" />
             </div>
           </Link>
@@ -50,19 +50,71 @@ const Navbar = () => {
             </Link>
           </div>
         ) : (
-          <div className="links d-md-flex gap-4 fs-4 d-none ">
-            <Link className="text-light" to="/">
-              Home
-            </Link>
-            <Link className="text-light" to="/skills">
-              Skills
-            </Link>
-            <Link className="text-light" to="/projects">
-              Projects
-            </Link>
-            <Link className="text-light" to="/contact">
-              Contact
-            </Link>
+          // <div className="links d-md-flex gap-4 fs-4 d-none ">
+          //   <Link className="text-light" to="/">
+          //     Home
+          //   </Link>
+          //   <Link className="text-light" to="/skills">
+          //     Skills
+          //   </Link>
+          //   <Link className="text-light" to="/projects">
+          //     Projects
+          //   </Link>
+          //   <Link className="text-light" to="/contact">
+          //     Contact
+          //   </Link>
+          // </div>
+          <div className="Menu">
+            <ul className="Menu-list list-unstyled d-flex" data-offset="10">
+              <Link to="/" className="text-decoration-none">
+                <li className="Menu-list-item" data-offset="20" onclick>
+                  Home
+                  <span className="Mask">
+                    <span>Home</span>
+                  </span>
+                  <span className="Mask">
+                    <span>Home</span>
+                  </span>
+                </li>
+              </Link>
+              <Link className="text-decoration-none" to="/skills">
+                <li
+                  className="Menu-list-item me-4 pe-2"
+                  data-offset="16"
+                  onclick
+                >
+                  Skils
+                  <span className="Mask">
+                    <span>Skills</span>
+                  </span>
+                  <span className="Mask">
+                    <span>Skills</span>
+                  </span>
+                </li>
+              </Link>
+              <Link className="text-decoration-none" to="/projects">
+                <li className="Menu-list-item" data-offset="12" onclick>
+                  Projects
+                  <span className="Mask">
+                    <span>Projects</span>
+                  </span>
+                  <span className="Mask">
+                    <span>Projects</span>
+                  </span>
+                </li>
+              </Link>
+              <Link className="text-decoration-none" to="/contact">
+                <li className="Menu-list-item" data-offset="8" onclick>
+                  Contact
+                  <span className="Mask">
+                    <span>Contact</span>
+                  </span>
+                  <span className="Mask">
+                    <span>Contact</span>
+                  </span>
+                </li>
+              </Link>
+            </ul>
           </div>
         )}
       </nav>
