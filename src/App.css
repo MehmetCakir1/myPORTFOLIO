@@ -253,7 +253,19 @@ aside {
   background-color: #2a4c80;
   color:#ccd6f6;
 }
-
+.project-card{
+  animation: project-animation 1s ease;
+}
+@keyframes project-animation {
+  0%{
+    /* transform: scale(0); */
+    transform: rotateY(180deg)
+  }
+  100%{
+    /* transform: scale(1); */
+    transform: rotateY(0deg)
+  }
+}
 /*--------buttons above---------------*/
 .single-category {
   width: 7rem;

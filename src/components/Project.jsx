@@ -4,8 +4,7 @@ import {Link} from "react-router-dom"
 const Project = ({ name, image, url, source }) => {
 
   const [showBtn,setShowBtn]=useState(true)
-
- 
+  
   return (
       <div
         className="project-card col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center align-items-center flex-column mb-2 mb-lg-4 rounded-3">
@@ -17,9 +16,7 @@ const Project = ({ name, image, url, source }) => {
         <Link to={`${source.slice(6)}`} target="_blank"><button className="btn source border-0 fw-bold">Source Code</button></Link> 
       </div>
         </div>
-        
       </div>
- 
   );
 };
 

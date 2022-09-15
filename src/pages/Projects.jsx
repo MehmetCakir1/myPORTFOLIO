@@ -11,7 +11,6 @@ const Projects = () => {
 const handleProjects = (e)=>{
   if(e.target.value=="all"){
     setProjects(data)
-
   }else{
     setProjects(
     data.filter((item)=>item.tool==e.target.value)
