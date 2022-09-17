@@ -5,8 +5,7 @@ const data = [
         name:"TailwindCSS Project",
         image:"tailwindCSS",
         url:"https://mehmetcakir1.github.io/tailwindCSSProject/",
-        source:"",
-        source:"",
+        source:"https://github.com/MehmetCakir1/tailwindCSSProject",
         tool:"css"
     },
     {
