@@ -1,6 +1,15 @@
 
 const data = [
     {
+        id:58,
+        name:"TailwindCSS Project",
+        image:"tailwindCSS",
+        url:"https://mehmetcakir1.github.io/tailwindCSSProject/",
+        source:"",
+        source:"",
+        tool:"css"
+    },
+    {
         id:57,
         name:"Weather App With Django",
         image:"weather",
