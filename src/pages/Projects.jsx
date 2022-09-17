@@ -7,7 +7,6 @@ const Projects = () => {
 //  console.log(projects);
 
 
-
 const handleProjects = (e)=>{
   if(e.target.value=="all"){
     setProjects(data)
