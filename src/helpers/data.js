@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:59,
+        name:"Weather App-TailwindCSS",
+        image:"weatherAppWithReact",
+        url:"https://weather-app-with-react-tailwind-css.vercel.app/",
+        source:"https://github.com/MehmetCakir1/weatherAppWithReact-TailwindCSS",
+        tool:"react"
+    },
+    {
         id:58,
         name:"TailwindCSS Project",
         image:"tailwindCSS",
