@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:60,
+        name:"Shopping Cart With TypeScript",
+        image:"shoppingCart",
+        url:"https://shopping-cart-with-type-script.vercel.app/",
+        source:"https://github.com/MehmetCakir1/shoppingCartWithTypeScript",
+        tool:"react"
+    },
+    {
         id:59,
         name:"Weather App-TailwindCSS",
         image:"weatherAppWithReact",
