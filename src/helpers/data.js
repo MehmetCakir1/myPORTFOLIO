@@ -1,6 +1,14 @@
 
 const data = [
     {
+        id:61,
+        name:"Quiz App",
+        image:"quizApp",
+        url:"https://github.com/MehmetCakir1/quizAppWithReact",
+        source:"https://github.com/MehmetCakir1/quizAppWithReact",
+        tool:"react"
+    },
+    {
         id:60,
         name:"Shopping Cart With TypeScript",
         image:"shoppingCart",
