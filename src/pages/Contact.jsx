@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
+    <>
     <article className="d-flex justify-content-center contact gap-2 flex-column flex-sm-row flex-wrap align-items-center">
       <div className="text-light d-flex justify-content-center align-items-center contactLinkedin p-4 ">
         <Link
@@ -36,6 +37,10 @@ const Contact = () => {
 
       </div>
     </article>
+        <div className="page-header">
+        <h1 className="py-1">CONTACT</h1>
+      </div>
+    </>
   );
 };
 

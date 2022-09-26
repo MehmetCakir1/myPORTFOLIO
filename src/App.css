@@ -285,6 +285,22 @@ aside {
   color: #0a192f !important;
   font-weight: 700;
 }
+.page-header h1{
+  position: fixed;
+  top:50%;
+  right: 0%;
+  transform: translateY(-50%);
+  transform: rotateZ(-90deg);
+  color: white;
+  background-color: #0372C1;
+  margin-right: -6rem;
+  width: 270px !important;
+  text-align: center !important;
+  /* border-radius: 70px 70px 0px 0; */
+}
+
+
+
 /*-----------------------PROJECT PAGE----------------------------*/
 .project-imgDiv img {
   width: 100%;
@@ -539,11 +555,19 @@ article.contact {
   article.contact {
     margin-top: 3rem;
   }
+  .page-header h1{
+    width: 180px !important;
+    margin-right: -4rem;
+  }
 }
 @media (max-width: 567px) {
   .icons {
     transform: translate(-8rem);
   }
+  /* .page-header h1{
+    width: 180px !important;
+    margin-right: -4rem;
+  } */
 }
 @media (max-width: 400px) {
   .project-imgDiv {
