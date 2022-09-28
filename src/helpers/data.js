@@ -9,6 +9,14 @@ const data = [
         tool:"react"
     },
     {
+        id:62,
+        name:"Budget Planner With TypeScript",
+        image:"budgetPlanner",
+        url:"https://budget-planner-with-type-script.vercel.app/",
+        source:"https://github.com/MehmetCakir1/budgetPlannerWithTypeScript",
+        tool:"react"
+    },
+    {
         id:61,
         name:"Quiz App",
         image:"quizApp",
