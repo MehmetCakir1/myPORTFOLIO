@@ -9,6 +9,14 @@ const data = [
         tool:"react"
     },
     {
+        id:63,
+        name:"CRUD Operations With Redux Toolkit",
+        image:"Crud",
+        url:"https://crud-operations-with-redux-toolkit.vercel.app/",
+        source:"https://github.com/MehmetCakir1/CRUD-OperationsWithReduxToolkit",
+        tool:"react"
+    },
+    {
         id:62,
         name:"Budget Planner With TypeScript",
         image:"budgetPlanner",
