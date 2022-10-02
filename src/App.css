@@ -17,83 +17,7 @@ body {
 }
 
 .links a{
-  color: #8892b0 !important;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-a:visited {
-  color: white !important;
-}
-.links a:hover {
-  color: #8892b0 !important;
-}
-.hamburger{
-  color:#ccd6f6;
-}
-.Menu-list {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.Menu-list-item {
-  position: relative;
-  color: transparent;
-  cursor: pointer;
-  margin: 0 1.2rem;
-  /* transform: rotateX(-10deg) rotateY(30deg); */
-}
-.Menu-list-item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 53%;
-  left: -10%;
-  right: -10%;
-  height: 2px;
-  border-radius: 4px;
-  margin-top: -2px;
-  /* background: #FF2C75; */
-  background: #8892b0;
-  transform: scale(0);
-  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
-  z-index: 1;
-}
-
-.Mask {
-  display: block;
-  position: absolute;
-  overflow: hidden;
-  /* color: #FF2C75; */
-  color: #FFf;
-  top: 0;
-  height: 49%;
-  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
-}
-.Mask span {
-  display: block;
-}
-
-.Mask + .Mask {
-  top: 48.9%;
-  height: 51.1%;
-}
-.Mask + .Mask span {
-  transform: translateY(-49%);
-}
-
-.Menu-list-item:hover .Mask,
-.Menu-list-item:active .Mask {
-  color: #FFF;
-  transform: skewX(12deg) translateX(5px);
-}
-.Menu-list-item:hover .Mask + .Mask,
-.Menu-list-item:active .Mask + .Mask {
-  transform: skewX(12deg) translateX(-5px);
-}
-.Menu-list-item:hover::before,
-.Menu-list-item:active::before {
-  transform: scale(1);
 }
 
 /*-------------------HOME PAGE---------------------------*/
@@ -549,25 +473,17 @@ article.contact {
   .desc {
     font-size: 0.9rem;
   }
-  /* .homeContainer{
-    margin-top: 6rem!important;
-  } */
+
   article.contact {
     margin-top: 3rem;
   }
-  .page-header h1{
-    width: 180px !important;
-    margin-right: -4rem;
-  }
+
 }
 @media (max-width: 567px) {
   .icons {
     transform: translate(-8rem);
   }
-  /* .page-header h1{
-    width: 180px !important;
-    margin-right: -4rem;
-  } */
+
 }
 @media (max-width: 400px) {
   .project-imgDiv {
@@ -583,9 +499,7 @@ article.contact {
     width: 100%;
     height: 180px;
   }
-  /* .homeContainer{
-    margin-top: 2rem!important;
-  } */
+ 
   article.contact {
     margin-top: 1rem;
   }
@@ -606,9 +520,7 @@ article.contact {
 }
 }
 @media (min-width: 1000px) {
-  .links a {
-    border: none !important;
-  }
+  
   .homeContainer{
       margin-top: 8rem !important;
   }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
@@ -24,96 +24,75 @@ const Navbar = () => {
         </div>
         {showMenu ? (
           <div className="links d-flex fs-4 flex-column flex-md-row gap-md-4 flex-wrap">
-            <Link
-              className=" border-1 border-bottom border-danger text-center"
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger border-1 border-bottom border-danger text-center"
+                  : "border-1 border-bottom border-danger text-center"
+              }
               to="/"
             >
               Home
-            </Link>
-            <Link
-              className="border-1 border-bottom border-danger text-center"
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger border-1 border-bottom border-danger text-center"
+                  : "border-1 border-bottom border-danger text-center"
+              }
               to="/skills"
             >
               Skills
-            </Link>
-            <Link
-              className="  border-1 border-bottom border-danger text-center"
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger border-1 border-bottom border-danger text-center"
+                  : "border-1 border-bottom border-danger text-center"
+              }
               to="/projects"
             >
               Projects
-            </Link>
-            <Link
-              className=" border-1 border-bottom border-danger text-center"
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger border-1 border-bottom border-danger text-center"
+                  : "border-1 border-bottom border-danger text-center"
+              }
               to="/contact"
             >
               Contact
-            </Link>
+            </NavLink>
           </div>
         ) : (
-          // <div className="links d-md-flex gap-4 fs-4 d-none ">
-          //   <Link className="text-light" to="/">
-          //     Home
-          //   </Link>
-          //   <Link className="text-light" to="/skills">
-          //     Skills
-          //   </Link>
-          //   <Link className="text-light" to="/projects">
-          //     Projects
-          //   </Link>
-          //   <Link className="text-light" to="/contact">
-          //     Contact
-          //   </Link>
-          // </div>
-          <div className="Menu">
-            <ul className="Menu-list list-unstyled d-none d-md-flex p-0 m-0" data-offset="10">
-              <Link to="/" className="text-decoration-none">
-                <li className="Menu-list-item" data-offset="20" >
-                  Home
-                  <span className="Mask">
-                    <span>Home</span>
-                  </span>
-                  <span className="Mask">
-                    <span>Home</span>
-                  </span>
-                </li>
-              </Link>
-              <Link className="text-decoration-none" to="/skills">
-                <li
-                  className="Menu-list-item me-4 pe-2"
-                  data-offset="16"
-                >
-                  Skils
-                  <span className="Mask">
-                    <span>Skills</span>
-                  </span>
-                  <span className="Mask">
-                    <span>Skills</span>
-                  </span>
-                </li>
-              </Link>
-              <Link className="text-decoration-none" to="/projects">
-                <li className="Menu-list-item" data-offset="12">
-                  Projects
-                  <span className="Mask">
-                    <span>Projects</span>
-                  </span>
-                  <span className="Mask">
-                    <span>Projects</span>
-                  </span>
-                </li>
-              </Link>
-              <Link className="text-decoration-none" to="/contact">
-                <li className="Menu-list-item" data-offset="8">
-                  Contact
-                  <span className="Mask">
-                    <span>Contact</span>
-                  </span>
-                  <span className="Mask">
-                    <span>Contact</span>
-                  </span>
-                </li>
-              </Link>
-            </ul>
+          <div className="links d-md-flex gap-4 fs-4 d-none ">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-danger fw-bold" : "text-light"
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-danger fw-bold" : "text-light"
+              }
+              to="/skills"
+            >
+              Skills
+            </NavLink>
+            <NavLink 
+            className={({isActive})=> isActive ? "text-danger fw-bold " :"text-light"} 
+            to="/projects">
+              Projects
+            </NavLink>
+            <NavLink 
+            className={({isActive})=> isActive ? "text-danger fw-bold" :"text-light"} 
+            to="/contact">
+              Contact
+            </NavLink>
           </div>
         )}
       </nav>

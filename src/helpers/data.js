@@ -9,6 +9,14 @@ const data = [
         tool:"react"
     },
     {
+        id:64,
+        name:"SandBox Seller With TypeScript",
+        image:"sandbox",
+        url:"https://sandbox-seller-with-type-script.vercel.app/",
+        source:"https://github.com/MehmetCakir1/sandboxSellerWithTypeScript",
+        tool:"react"
+    },
+    {
         id:63,
         name:"CRUD Operations With Redux Toolkit",
         image:"Crud",

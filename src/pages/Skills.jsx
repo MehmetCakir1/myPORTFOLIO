@@ -96,9 +96,9 @@ const Skills = () => {
         </div>
       </article>
     </div>
-    <div className="page-header">
+    {/* <div className="page-header">
         <h1 className="py-1">SKILLS</h1>
-      </div>
+      </div> */}
     </>
    
   );

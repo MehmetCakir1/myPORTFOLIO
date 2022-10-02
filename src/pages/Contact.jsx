@@ -37,9 +37,9 @@ const Contact = () => {
 
       </div>
     </article>
-        <div className="page-header">
+        {/* <div className="page-header">
         <h1 className="py-1">CONTACT</h1>
-      </div>
+      </div> */}
     </>
   );
 };

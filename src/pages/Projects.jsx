@@ -19,9 +19,9 @@ const handleProjects = (e)=>{
   return (
     <div>
       <ProjectContainer projects={projects} handleProjects={handleProjects}/>
-      <div className="page-header">
+      {/* <div className="page-header">
         <h1 className="py-1">PROJECTS</h1>
-      </div>
+      </div> */}
     </div>
   )
 }
