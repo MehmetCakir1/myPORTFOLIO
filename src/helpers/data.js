@@ -9,6 +9,14 @@ const data = [
         tool:"react"
     },
     {
+        id:66,
+        name:"Simpsons App With TypeScript",
+        image:"simpsons",
+        url:"https://simpsons-app-with-type-script.vercel.app/",
+        source:"https://github.com/MehmetCakir1/simpsonsAppWithTypeScript",
+        tool:"react"
+    },
+    {
         id:65,
         name:"Github Users With TypeScript",
         image:"githubUsers",
