@@ -5,7 +5,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
 
   const changeColor = (a) => {
     let items = document.querySelectorAll(".single-category.active-category");
-    if (items.length && a.className!="button__vertical" &&a.className!="button__horizontal") {
+    if (items.length && a.className!="button__vertical" && a.className!="button__horizontal") {
       items[0].className = "single-category";
     }
     a.target.className = "single-category active-category";
