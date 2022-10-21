@@ -2,11 +2,10 @@ import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
 
 const Home = () => {
-  const {theme,setTheme,changeTheme}=useContext(DataContext)
+  const {theme,changeTheme}=useContext(DataContext)
   return (
     <div className="home d-flex justify-content-center align-items-center flex-column">
       <div className="container m-auto col-9 homeContainer">
-        {/* <h3 className="text-danger mt-5 h-6">Hi My name is</h3> */}
         <h2 className="text-light fullName">Mehmet Çakır</h2>
         <h2 className="text-light frondEnd">I'm a Front-End Developer</h2>
         <h5 className="text-light desc">

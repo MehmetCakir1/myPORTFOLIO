@@ -14,7 +14,13 @@ const Navbar = () => {
         <div className="logo  d-flex justify-content-between align-items-center">
           <Link to="/">
             <div className="logoDiv">
-              <img className="logo-img" src="images/logo.png" alt="logo" />
+              {
+                theme =="light-theme" ? (
+                  <img className="logo-img-light" src="images/mehmet-logo.png" alt="logo-2" />
+                ):(
+                  <img className="logo-img" src="images/logo.png" alt="logo" />
+                )
+              }
             </div>
           </Link>
           <button

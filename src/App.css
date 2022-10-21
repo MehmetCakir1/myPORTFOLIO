@@ -61,6 +61,12 @@ body {
 .logo-img {
   height: 60px;
 }
+.logo-img-light {
+ width: 200px;
+ position: absolute;
+ left: -20px;
+ top: -50px;
+}
 
  .links a{
   text-decoration: none;
@@ -471,6 +477,9 @@ article.contact {
   article.contact {
     margin-top: 1rem;
   }
+  .homeContainer{
+    margin-top: 2rem !important;
+}
 }
 /*---------------------------------------------*/
 @media (min-width: 500px) {
