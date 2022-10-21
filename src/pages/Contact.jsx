@@ -9,10 +9,17 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <>
-    <article className="d-flex justify-content-center contact gap-2 flex-column flex-sm-row flex-wrap align-items-center">
-      <div className="text-light d-flex justify-content-center align-items-center contactLinkedin p-4 ">
-        <Link
+    <main className="d-flex justify-content-center align-items-center gap-4 p-5">
+		<div className="col" >
+				<div className="container">
+					<div className="front front-1">
+						<div className="inner">
+							<p className="fs-2">LINKEDIN</p>
+						</div>
+					</div>
+					<div className="back">
+						<div className="inner d-flex justify-content-center align-items-center">
+            <Link
           to="//www.linkedin.com/in/mehmet%C3%A7ak%C4%B1r43/"
           target="_blank"
         >
@@ -20,27 +27,47 @@ const Contact = () => {
             <BsLinkedin />
           </span>
         </Link>
-      </div>
-      <div className="text-light text-light  d-flex justify-content-center align-items-center contactGithub p-4">
-        <Link to="//github.com/MehmetCakir1" target="_blank">
+						</div>
+					</div>
+				</div>
+			</div>
+		<div className="col" >
+				<div className="container">
+					<div className="front front-2">
+						<div className="inner">
+            <p className="fs-2">GITHUB</p>
+						</div>
+					</div>
+					<div className="back">
+            <div className="inner d-flex justify-content-center align-items-center">
+            <Link to="//github.com/MehmetCakir1" target="_blank">
         <span className="display-2 d-flex align-items-center rounded-circle">
-          <BsGithub />
+          <BsGithub className="github-contact"/>
         </span>
         </Link>
-      </div>
-      <div className=" text-light  d-flex justify-content-center align-items-center contactEmail p-4  ">
-        <a href="mailto:mehmetcakir4227@gmail.com" target="_blank">
+						</div>
+					</div>
+				</div>
+			</div>
+		<div className="col" >
+				<div className="container">
+					<div className="front front-3">
+						<div className="inner">
+							<p>EMAIL</p>
+						</div>
+					</div>
+					<div className="back">
+          <div className="inner d-flex justify-content-center align-items-center ">
+          <a href="mailto:mehmetcakir4227@gmail.com" target="_blank">
         <span className="display-2 d-flex align-items-center justify-content-center ">
-          <BsFillEnvelopeFill/>
+          <BsFillEnvelopeFill className="email-contact"/>
         </span>
         </a>
-
-      </div>
-    </article>
-        {/* <div className="page-header">
-        <h1 className="py-1">CONTACT</h1>
-      </div> */}
-    </>
+						</div>
+					</div>
+				</div>
+			</div>
+    </main>
   );
 };
 
