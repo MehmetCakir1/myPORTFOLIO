@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <main className="d-flex justify-content-center align-items-center gap-4 p-5">
-		<div className="col" >
+    <main className="d-flex flex-wrap justify-content-center align-items-center gap-4 flex-wrap p-5 contact-container">
+		<div className="contact-card" >
 				<div className="container">
 					<div className="front front-1">
 						<div className="inner">
@@ -31,7 +31,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		<div className="col" >
+		<div className="contact-card" >
 				<div className="container">
 					<div className="front front-2">
 						<div className="inner">
@@ -49,7 +49,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		<div className="col" >
+		<div className="contact-card" >
 				<div className="container">
 					<div className="front front-3">
 						<div className="inner">

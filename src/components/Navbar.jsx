@@ -16,7 +16,7 @@ const Navbar = () => {
             </div>
           </Link>
           <button
-            className="hamburger fs-2 d-flex justify-content-between align-items-center  d-md-none border-0 bg-transparent"
+            className="hamburger fs-2 d-flex justify-content-between align-items-center text-light d-md-none border-0 bg-transparent"
             onClick={() => setShowMenu(!showMenu)}
           >
             <GiHamburgerMenu />

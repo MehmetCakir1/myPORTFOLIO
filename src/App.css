@@ -449,8 +449,9 @@ article.contact {
 /*---------------------------------------*/
 
 /*CONTACT CARDS*/
-.col{
-  max-width:19rem ;
+
+.contact-card{
+  width:19rem !important ;
   cursor: pointer;
 }
 
@@ -467,7 +468,7 @@ article.contact {
   background-image: url("https://unsplash.it/502/502/");
 }
 .front-3{
-  background-image: url("https://unsplash.it/510/510/");
+  background-image: url("https://unsplash.it/503/503/");
 }
 
 .front,
@@ -489,13 +490,14 @@ article.contact {
 	border-radius: 10px;
 	color: #fff;
 	font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .back{
   background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#074866 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#074866 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#074866 100%);
 }
 
 .front:after{
