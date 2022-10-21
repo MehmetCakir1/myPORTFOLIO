@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
+
 const Home = () => {
+  const {theme,setTheme,changeTheme}=useContext(DataContext)
   return (
     <div className="home d-flex justify-content-center align-items-center flex-column">
       <div className="container m-auto col-9 homeContainer">
@@ -10,19 +14,43 @@ const Home = () => {
           experiences. Currently, I’m focused on building responsive
           web applications.
         </h5>
-        <div className="d-flex justify-content-between">
+        {theme==="dark-theme" && (
+                  <div className="d-flex justify-content-between">
+                  <div className="bubble"></div>
              <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-        <div className="bubble"></div>
-      </div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+             <div className="bubble"></div>
+           </div>
+        )}
         </div>
-        <img src="images/wave.svg" alt="wave"className="wave" />
+        {
+        theme==="dark-theme" && (
+          <img src="images/wave.svg" alt="wave"className="wave" />
+        )
+}
+  
+        
+        <div className="switch">
+          <label className="theme-switch" htmlFor="checkbox" id="round1">
+            <input type="checkbox" id="checkbox" 
+            onClick={changeTheme}
+            />
+             <div className="slider round">
+              {
+                theme=="light-theme" ?(
+                  <img src="images/sun.png" alt="sun" className="sun"/>
+                ):(
+                  <img src="images/moon.png" alt="moon" className="moon"/>
+                )
+              }
+          </div> 
+          </label>
+        </div>
       </div>
 
   );

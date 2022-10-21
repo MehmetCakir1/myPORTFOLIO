@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   BsLinkedin,
   BsGithub,
@@ -6,8 +7,11 @@ import {
 } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
+import { DataContext } from "../context/DataContext";
 
 const Contact = () => {
+	const {theme,setTheme,changeTheme}=useContext(DataContext)
+
   return (
     <main className="d-flex flex-wrap justify-content-center align-items-center gap-4 flex-wrap p-5 contact-container">
 		<div className="contact-card" >
@@ -67,6 +71,22 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
+			<div className="switch">
+          <label className="theme-switch" htmlFor="checkbox" id="round1">
+            <input type="checkbox" id="checkbox" 
+			  onClick={changeTheme}
+            />
+             <div className="slider round">
+              {
+                theme=="light-theme" ?(
+                  <img src="images/sun.png" alt="sun" className="sun"/>
+                ):(
+                  <img src="images/moon.png" alt="moon" className="moon"/>
+                )
+              }
+          </div> 
+          </label>
+        </div>
     </main>
   );
 };

@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
+
 const Skills = () => {
+  const {theme,setTheme,changeTheme}=useContext(DataContext)
+
   return (
     <> 
     <div className=" d-flex align-items-center justify-content-center mt-md-5 skills-main-div">
@@ -96,9 +101,23 @@ const Skills = () => {
         </div>
       </article>
     </div>
-    {/* <div className="page-header">
-        <h1 className="py-1">SKILLS</h1>
-      </div> */}
+            
+    <div className="switch">
+          <label className="theme-switch" htmlFor="checkbox" id="round1">
+            <input type="checkbox" id="checkbox" 
+              onClick={changeTheme}
+            />
+             <div className="slider round">
+              {
+                theme=="light-theme" ?(
+                  <img src="images/sun.png" alt="sun" className="sun"/>
+                ):(
+                  <img src="images/moon.png" alt="moon" className="moon"/>
+                )
+              }
+          </div> 
+          </label>
+        </div>
     </>
    
   );

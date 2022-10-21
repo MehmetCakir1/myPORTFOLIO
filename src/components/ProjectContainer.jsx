@@ -1,7 +1,9 @@
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
 import Project from "./Project";
 
 const ProjectContainer = ({ projects, handleProjects }) => {
-  // console.log(projects);
+  const {theme,setTheme,changeTheme}=useContext(DataContext)
 
   const changeColor = (a) => {
     let items = document.querySelectorAll(".single-category.active-category");
@@ -12,7 +14,7 @@ const ProjectContainer = ({ projects, handleProjects }) => {
   };
 
   return (
-    <div className="row container m-auto">
+    <>    <div className="row container m-auto">
       <div className="buttons d-flex justify-content-center align-items-center gap-2 mb-5 mt-2 py-1 flex-wrap">
         <button
           onClick={(e) => {
@@ -71,6 +73,25 @@ const ProjectContainer = ({ projects, handleProjects }) => {
         })}
       </div>
     </div>
+    <div className="switch">
+          <label className="theme-switch" htmlFor="checkbox" id="round1">
+            <input type="checkbox" id="checkbox" 
+              onClick={changeTheme}
+            />
+             <div className="slider round">
+              {
+                theme=="light-theme" ?(
+                  <img src="images/sun.png" alt="sun" className="sun"/>
+                ):(
+                  <img src="images/moon.png" alt="moon" className="moon"/>
+                )
+              }
+          </div> 
+          </label>
+        </div>
+
+    </>
+
   );
 };
 
