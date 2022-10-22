@@ -9,6 +9,14 @@ const data = [
         tool:"react"
     },
     {
+        id:69,
+        name:"Hacker News With RTK Query",
+        image:"hackerNewsDark",
+        url:"https://hacker-news-with-rtkquery.vercel.app/",
+        source:"https://github.com/MehmetCakir1/hackerNewsWith-RTKQuery-",
+        tool:"react"
+    },
+    {
         id:68,
         name:"Country App With TypeScript",
         image:"countryApp",
