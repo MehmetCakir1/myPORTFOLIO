@@ -55,9 +55,9 @@ body {
   background-color:var(--bgColor)
 }
 /*--------------------NAVBAR-----------------------------*/
-/* nav{
-  box-shadow: 0px 5px 5px #11294d;
-} */
+nav{
+  min-height: 91.9792px;
+}
 .logo-img {
   height: 60px;
 }
@@ -409,102 +409,12 @@ aside {
 article.contact {
   margin-top: 10rem;
 }
+.contact-container{
+  margin-top: 0;
+}
 
 
-
-@media (max-width: 1050px) {
-  .card-container {
-    margin-left: 0.8rem !important;
-  }
-  .icons {
-    transform: translate(-7.5rem);
-  }
-}
-@media (max-width: 991px) {
-  .icons {
-    transform: translate(-7.6rem);
-  }
-  .card-container {
-    margin-left: 0rem !important;
-  }
-  /* .homeContainer{
-    margin-top: 7rem!important;
-  } */
-}
-@media (max-width: 767px) {
-  .logo {
-    width: 100%;
-  }
-
-  .icons {
-    transform: translate(-8rem);
-  }
-  .fullName,
-  .frondEnd {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-  .desc {
-    font-size: 0.9rem;
-  }
-
-  article.contact {
-    margin-top: 3rem;
-  }
-
-}
-@media (max-width: 567px) {
-  .icons {
-    transform: translate(-8rem);
-  }
-
-}
-@media (max-width: 400px) {
-  .project-imgDiv {
-    width: 240px;
-  }
-  .project-imgDiv img {
-    height: 180px;
-  }
-  .icons {
-    margin-right: 0.1rem !important;
-  }
-  .btnDiv {
-    width: 100%;
-    height: 180px;
-  }
- 
-  article.contact {
-    margin-top: 1rem;
-  }
-  .homeContainer{
-    margin-top: 2rem !important;
-}
-}
-/*---------------------------------------------*/
-@media (min-width: 500px) {
-
-  .homeContainer{
-    margin-top: 3rem !important;
-}
-}
-@media (min-width: 768px) {
-  .links a {
-    border: none !important;
-  }
-  .homeContainer{
-    margin-top: 5rem !important;
-}
-}
-@media (min-width: 1000px) {
-  
-  .homeContainer{
-      margin-top: 8rem !important;
-  }
-}
-/*---------------------------------------*/
-
-/*CONTACT CARDS*/
+/*-------------------------CONTACT CARDS----------------------*/
 
 .contact-card{
   width:19rem !important ;
@@ -655,12 +565,115 @@ article.contact {
   color: #c75c04;
 }
 
+
+
+
+@media (max-width: 1050px) {
+  .card-container {
+    margin-left: 0.8rem !important;
+  }
+  .icons {
+    transform: translate(-7.5rem);
+  }
+}
+@media (max-width: 991px) {
+  .icons {
+    transform: translate(-7.6rem);
+  }
+  .card-container {
+    margin-left: 0rem !important;
+  }
+  /* .homeContainer{
+    margin-top: 7rem!important;
+  } */
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 100%;
+  }
+
+  .icons {
+    transform: translate(-8rem);
+  }
+  .fullName,
+  .frondEnd {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  article.contact {
+    margin-top: 3rem;
+  }
+  .homeContainer{
+    margin-top: 3rem !important;
+}
+
+}
+@media (max-width: 567px) {
+  .icons {
+    transform: translate(-8rem);
+  }
+
+}
+@media (max-width: 400px) {
+  .project-imgDiv {
+    width: 240px;
+  }
+  .project-imgDiv img {
+    height: 180px;
+  }
+  .icons {
+    margin-right: 0.1rem !important;
+  }
+  .btnDiv {
+    width: 100%;
+    height: 180px;
+  }
+ 
+  article.contact {
+    margin-top: 1rem;
+  }
+
+}
+/*---------------------------------------------*/
+@media (min-width: 500px) {
+  .switch{
+    position: fixed ;
+    right: 1.5rem !important;
+    bottom:1rem;
+}
+.contact-container{
+  margin-top: 1rem;
+}
+}
+@media (min-width: 768px) {
+  .links a {
+    border: none !important;
+  }
+  .homeContainer{
+    margin-top: 5rem !important;
+}
+.contact-container{
+  margin-top: 5rem;
+}
+}
+@media (min-width: 1000px) {
+  
+  .homeContainer{
+      margin-top: 8rem !important;
+  }
+}
+/*---------------------------------------*/
+
 /*----------------DARK MODE-----------------*/
 
 .switch{
     position: fixed ;
-    right: 2rem;
-    bottom:1.5rem;
+    right: 0.7rem;
+    bottom:1rem;
 }
 
 .theme-switch {
