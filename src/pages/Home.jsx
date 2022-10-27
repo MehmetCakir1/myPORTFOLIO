@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div className="home d-flex justify-content-center align-items-center flex-column">
       <div className="container m-auto col-9 homeContainer">
-        <h2 className="text-light fullName">Mehmet Çakır</h2>
-        <h2 className="text-light frondEnd">I'm a Front-End Developer</h2>
-        <h5 className="text-light desc">
+        <h2 className=" fullName">Mehmet Çakır</h2>
+        <h2 className=" frondEnd">I'm a Front-End Developer</h2>
+        <h5 className="desc">
           I’m a Frond-End Developer specializing in building exceptional digital
           experiences. Currently, I’m focused on building responsive
           web applications.
